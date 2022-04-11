@@ -31,10 +31,10 @@ Sub UAC()
         dict.Add "2", "ACCOUNTDISABLE"
         dict.Add "1", "SCRIPT"
     Dim key As Variant
-    
-    ' Select cell *first line of data*.
+
+    ' Select the column header with the UAC values, adapat as needed by editing "spare_big_1"
     selectcolomn = "spare_big_1"
-    Set cell1 = Sheet1.Rows(1).Find(What:="spare_big_1", LookIn:=xlValues, _
+    Set cell1 = ActiveSheet.Rows(1).Find(What:="spare_big_1", LookIn:=xlValues, _
     LookAt:=xlWhole, SearchOrder:=xlByRows, SearchDirection:=xlNext, _
     MatchCase:=False, SearchFormat:=False)
     ActiveSheet.Cells(2, cell1.Column).Select
@@ -57,3 +57,4 @@ Sub UAC()
     Loop
 
 End Sub
+
