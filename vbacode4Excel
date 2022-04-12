@@ -1,11 +1,11 @@
 Sub UAC()
 
-    ' Declare a bunch of variables that may be usefull
+    ' Declare a bunch of variables that may be usefull.
     Dim cell1 As Range
     Dim selectcolomn As String
     Dim chaine1 As String
     Dim uacval As Long
-    ' Including the dictionary at the core of the desired uac operation
+    ' Including the dictionary at the core of the desired uac operation.
     Dim dict
     Set dict = CreateObject("Scripting.Dictionary")
         dict.Add "67108864", "PARTIAL_SECRETS_ACCOUNT"
@@ -32,7 +32,7 @@ Sub UAC()
         dict.Add "1", "SCRIPT"
     Dim key As Variant
 
-    ' Select the column header with the UAC values, adapat as needed by editing "spare_big_1"
+    ' Select the column header with the UAC values, adapt as needed by replacing "spare_big_1" with your actual column header.
     selectcolomn = "spare_big_1"
     Set cell1 = ActiveSheet.Rows(1).Find(What:="spare_big_1", LookIn:=xlValues, _
     LookAt:=xlWhole, SearchOrder:=xlByRows, SearchDirection:=xlNext, _
@@ -41,11 +41,11 @@ Sub UAC()
     
     ' Set Do loop to stop when an empty cell is reached.
     Do Until IsEmpty(ActiveCell)
-        ' Initialise human readable uac
+        ' (Re)Initialise human readable uac string.
         chaine1 = ""
         uacval = ActiveCell.Value
         Debug.Print chaine1
-        ' Recursively search for attributes starting with the high bit
+        ' Recursively search for attributes starting with the high bit.
         For Each k In dict.Keys
             If uacval >= k Then
                 uacval = uacval - k
