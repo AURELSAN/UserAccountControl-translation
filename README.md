@@ -12,7 +12,8 @@ This flag is often misunderstood. If means that the user is not subject to a pos
 So, the user can have a shorter password than required or even an empty password.
 
 How to use:<br />
-Open the desired CSV/Excel file that contains your UAC values in a column with Excel<br />
+Open with Excel the desired CSV/Excel file that contains the UAC values in a column<br />
+Select the desired worksheet/tab file that contains the UAC values (the macro will use the active worksheet)<br />
 Select View -> Macros<br />
 Type "UAC" in the "Macro name" field (without the "")<br />
 Then select "Create"<br />
