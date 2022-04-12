@@ -2,7 +2,7 @@ Simple VBA code to translate UserAccountControl attributes in Excel file from th
 This code is designed to work best with CSV/Excel template report from Detack appliance.
 You can customize the header search by changing the actual column header name you are looking for, by renaming "spare_big_1".
 
-To better under what UAC Property flags mean please refer to well documented Microsoft site:
+To better understand what UAC Property flags mean please refer to well documented Microsoft site:
 https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/useraccountcontrol-manipulate-account-properties
 Some other references can be more detailed and applicable to your daily work, like:
 http://www.selfadsi.org/ads-attributes/user-userAccountControl.htm
