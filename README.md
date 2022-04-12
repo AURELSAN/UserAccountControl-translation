@@ -11,12 +11,12 @@ Quick note about flag PASSWD_NOTREQD:
 This flag is often misunderstood. If means that the user is not subject to a possibly existing policy regarding the length of password. 
 So, the user can have a shorter password than required or even an empty password.
 
-How to use:
-Open the desired CSV/Excel file that contains your UAC values in a column with Excel
-Select View -> Macros
-Type "UAC" in the "Macro name" field (without the "")
-Then select "Create"
-Copy paste the full code, make sure to erase the "Sub UAC() End Sub" already present
-Select depending on your habits "Run"->"Run Sub" / "F5" / the green play button
-The results will be written in the column right after the column containing the UAC values (expect 1 second per 200 lines)
-You can then save your Excel file, there is no need to register the macro unless you want to do so
+How to use:<br />
+Open the desired CSV/Excel file that contains your UAC values in a column with Excel<br />
+Select View -> Macros<br />
+Type "UAC" in the "Macro name" field (without the "")<br />
+Then select "Create"<br />
+Copy paste the full code, make sure to erase the "Sub UAC() End Sub" already present<br />
+Select depending on your habits "Run"->"Run Sub" / "F5" / the green play button<br />
+The results will be written in the column right after the column containing the UAC values (expect 1 second per 200 lines)<br />
+You can then save your Excel file, there is no need to register the macro unless you want to do so<br />
