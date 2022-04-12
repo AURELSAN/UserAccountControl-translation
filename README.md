@@ -1,6 +1,6 @@
 Simple VBA code to translate UserAccountControl attributes in Excel file from their decimal value to a human readable value.
 This code is designed to work best with CSV/Excel template report from Detack appliance.
-You can customize the header search by changing the actual column header name you are looking for, by renaming "spare_big_1".
+You can simply customize the desired column header by renaming "spare_big_1" in the code with the actual column header name you are looking for.
 
 To better understand what UAC Property flags mean please refer to well documented Microsoft site:
 https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/useraccountcontrol-manipulate-account-properties
